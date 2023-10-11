@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title> Fake Store </title>
+</head>
+<body>
+    <nav>
+        <h1> Fake <span>Store</span></h1>
+        <div class="actions">
+            <button id="mode"><ion-icon name="sunny"></ion-icon></button>
+            <button class="cart" id="headToCart"><div  id="items_count"> 0 </div><ion-icon name="cart-outline"></ion-icon></button>
+            <button id="tologinbtn"> Login <ion-icon name="arrow-forward"></ion-icon></button>
+        </div>
+    </nav>
+    <main id="home_page">
+        <div class="catag">
+            <button class="active">All</button><button>Electronics</button><button>Jewelery</button><button> Men's Clothing </button><button> Women's Clothing </button><select><option> Filter </option></select>
+            <select><option> Sort </option></select>
+        </div>
+        <div class="products">
+            <div class="prod">
+                <div class="skel"></div>
+                <div class="skel"></div>
+            </div>
+            <div class="prod">
+                <div class="skel"></div>
+                <div class="skel"></div>
+            </div>
+            <div class="prod">
+                <div class="skel"></div>
+                <div class="skel"></div>
+            </div>
+            <div class="prod">
+                <div class="skel"></div>
+                <div class="skel"></div>
+            </div>
+            <div class="prod">
+                <div class="skel"></div>
+                <div class="skel"></div>
+            </div>
+            <div class="prod">
+                <div class="skel"></div>
+                <div class="skel"></div>
+            </div>
+            <div class="prod">
+                <div class="skel"></div>
+                <div class="skel"></div>
+            </div>
+            <div class="prod">
+                <div class="skel"></div>
+                <div class="skel"></div>
+            </div>
+        </div>
+    </main>
+    <main id="product_page">
+        <div class="product_nav">
+            <button><ion-icon name="arrow-back"></ion-icon> Back </button>
+        </div>
+        <div class="product_section">
+            
+        </div>
+        <div class="product_related_wrapper">
+            <h2> Related Products </h2>
+            <div class="product_related">
+                
+            </div>
+        </div>
+    </main>
+    <main id="login_page">
+        <form id="form">
+            <h2> Welcome Back </h2>
+            <label for="username"> Username </label>
+            <input type="text" placeholder="John Doe" id="username">
+            <label for="password"> Password </label>
+            <input type="password" id="password">
+            <div class="loginerror"> Wrong username or password </div>
+            <input type="button" value="Submit" id="loginbtn">
+            <input type="button" id="login_exit" value="Go Back Home">
+        </form>
+    </main>
+    <main id="cart_page">
+        <h2> Your Shopping Cart (<span>4</span> Items)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td class="prod_td"> Product </td>
+                    <td> Quantity </td>
+                    <td> Price </td>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <div class="cart_footer">
+            <div class="cart_balance">
+                <p> Your Total Balance: </p><p id="fbalance"> USD$ 00.00 </p>
+            </div>
+            <div class="cart_btns">
+                <button id="checkout_btn"> Checkout </button>
+                <button id="fromCartbtn"> Continue Shopping </button>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script defer src="main.js"></script>
+    <script src="src/jquery.js"></script>
+</body>
+</html>
